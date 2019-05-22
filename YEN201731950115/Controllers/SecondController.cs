@@ -11,7 +11,7 @@ namespace YEN201731950115.Controllers
         // GET: Second
         public ActionResult twice()
         {
-            ViewBag.a = "欢迎来到我的世界！";
+            ViewBag.b = "以下是我的信息表！";
             return View();
         }
     }

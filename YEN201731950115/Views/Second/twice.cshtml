@@ -5,31 +5,22 @@
 
 <h2>你好！</h2>
 <p>
-    @ViewBag.a
+    @ViewBag.b
 </p>
 
-<div class="divs"><a href="http://www.zjnu.edu.cn">浙江师范大学</a></div>
-<div class="divs"><a href="http://www.baidu.com">百度</a></div>
-<div class="divs"><a href="http://www.github.com">GitHub</a></div>
-<div class="divs"><a href="http://www.sina.com.cn">新浪</a></div>
-<div class="divs"><a href="http://soft.zjnu.edu.cn">师大软件网</a></div>
-<div class="divs"><a href="http://jwc.zjnu.edu.cn">教务处</a></div>
-<script>
-    var giveColor = document.getElementsByClassName('divs');
-    var color = ['#578fff', '#8c9ffd', '#ff7ea2', '#ffbf43', '#74dde3', 'red'];
-    function randomColorOn(giveColor, color) {//参数1为获取的元素组，参数二为获取的颜色组
-        var arr2 = [];
-        for (var i = color.length; i > 0; i--) {
-            const num = Math.floor(Math.random() * color.length); //获取随机数
-            arr2.push(color[num]); //把随机数添加到数组中
-            color.splice(num, 1); //删除原有数组的颜色
-        }
-
-        for (var j = 0; j < giveColor.length; j++) {
-            giveColor[j].style.backgroundColor = arr2[j];
-        }
-    }
-    randomColorOn(giveColor, color);
-</script>
-
-
+<div>
+    <table>
+        <tr>
+            <td>姓名：</td>
+            <td>杨恩女</td>
+        </tr>
+        <tr>
+            <td>性别：</td>
+            <td>女</td>
+        </tr>
+        <tr>
+            <td>学号：</td>
+            <td>201731950115</td>
+        </tr>
+    </table>
+</div>
